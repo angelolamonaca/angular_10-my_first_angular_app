@@ -7,14 +7,15 @@ Prende vita il progetto "GrabYourAchievement", che sostituirá questo file per i
 ## **04/12/2020**
 Ho dedicato la giornata di oggi alla comprensione teorica di vari aspetti, quali:
 
-Differenza tra monorepo e multirepo
+- [x] Differenza tra monorepo e multirepo
 
-Utilizzo di SCSS (trovo il mixin molto utile per personalizzare il proprio CSS assegnando i nostri valori personalizzati a variabili, questo permette di risparmiare molto tempo)
-Comprensione dell'utilizzo di una licenza MIT
+- [x] Utilizzo di SCSS (trovo il mixin molto utile per personalizzare il proprio CSS assegnando i nostri valori personalizzati a variabili, questo permette di risparmiare molto tempo)
 
-Corretta inizializzazione del progetto AngularCLI
+- [x] Comprensione dell'utilizzo di una licenza MIT
 
-Ho creato una nuova repo che sostituirá l'attuale: https://github.com/angelolamonaca/front-end-gya-angular
+- [x] Corretta inizializzazione del progetto AngularCLI
+
+- [x] Creazione nuova repo che sostituirá l'attuale: https://github.com/angelolamonaca/front-end-gya-angular
 
 Riporteró manualmente i componenti dall'attuale progetto a questo(l'attuale progetto é in locale, purtroppo l'eccessiva eliminazione/sostituzione/creazione di file mi crea problemi nel push dalla staging area), onde evitare possibili errori nel copia-incolla aggiorneró manualmente la nuova repo facendo meno confusione.
 
