@@ -20,5 +20,3 @@ Ho dedicato la giornata di oggi alla comprensione teorica di vari aspetti, quali
 Riporteró manualmente i componenti dall'attuale progetto a questo(l'attuale progetto é in locale, purtroppo l'eccessiva eliminazione/sostituzione/creazione di file mi crea problemi nel push dalla staging area), onde evitare possibili errori nel copia-incolla aggiorneró manualmente la nuova repo facendo meno confusione.
 
 Nonostante un rallentamento dovuto dal mio debito di nozioni teoriche a riguardo di vari aspetti, ad oggi la "deadline for completion" resta il 9 Dicembre 2020.
-
-Per i successivi aggiornamenti fare riferimento al file: https://github.com/angelolamonaca/front-end-gya-angular/blob/master/TRACKER.md
