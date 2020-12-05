@@ -10,11 +10,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import {FormsModule} from '@angular/forms';
+import { AchievementDetailComponent } from './achievement-detail/achievement-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AchievementsComponent
+    AchievementsComponent,
+    AchievementDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

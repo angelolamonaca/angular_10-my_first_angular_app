@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Achievement } from '../achievement';
-import { ACHIEVEMENTS} from '../mock-achievements';
+import { Achievement } from '../achievement'; // importa l'interfaccia
+import { AchievementService } from '../achievement.service';
+import { MessageService} from '../message.service';
 
 @Component({
   selector: 'app-achievements',
@@ -9,16 +10,27 @@ import { ACHIEVEMENTS} from '../mock-achievements';
 })
 export class AchievementsComponent implements OnInit {
 
-  achievements = ACHIEVEMENTS;
-
   selectedAchievement: Achievement | undefined;
+  // creazione oggetto selectedAchievement che assumerá le
+  // proprietá dell'interfaccia Achievements
+
+  achievements: Achievement[] | undefined;
+
+
+  constructor(private achievementService: AchievementService, private messageService: MessageService) { }
+
+  // tslint:disable-next-line:typedef
+  ngOnInit() {
+    this.getAchievements();
+  }
+
   onSelect(achievement: Achievement): void {
     this.selectedAchievement = achievement;
+    this.messageService.add(`AchievementsComponent: Selected achievement id=${achievement.id}`);
   }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  getAchievements(): void {
+    this.achievementService.getAchievements()
+      .subscribe((achievements: Achievement[] | undefined) => this.achievements = achievements);
   }
-
 }
