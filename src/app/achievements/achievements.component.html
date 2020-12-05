@@ -1,15 +1,15 @@
 <h2>My Achievements</h2>
 <ul class="achievements">
-  <li *ngFor="let achievement of achievements"
-      [class.selected]="achievement === selectedAchievement"
-      (click)="onSelect(achievement)">
-    <!-- riga 3: ciclo for per scorrere l'array con i dettagli degli Achievements
-    riga 4: assegnazione stile al bottone premuto (per riconoscerlo)
-    riga 5: impostiamo un evento al click di un elemento della lista
-            quando avviene si richiama il metodo onSelect passando la variabile
-            achievement del ciclo for-->
+  <li *ngFor="let achievement of achievements">
+    <a routerLink="/detail/{{achievement.id}}">
     <span class="badge">{{achievement.id}}</span> {{achievement.date | date}}
+    </a>
   </li>
 </ul>
 
-<app-achievement-detail [achievement]="selectedAchievement"></app-achievement-detail>
+
+<!-- riga 3: ciclo for per scorrere l'array con i dettagli degli Achievements
+riga 4: assegnazione stile al bottone premuto (per riconoscerlo)
+riga 5: impostiamo un evento al click di un elemento della lista
+        quando avviene si richiama il metodo onSelect passando la variabile
+        achievement del ciclo for-->

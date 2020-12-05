@@ -12,13 +12,15 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import {FormsModule} from '@angular/forms';
 import { AchievementDetailComponent } from './achievement-detail/achievement-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AchievementsComponent,
     AchievementDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

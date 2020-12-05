@@ -1,4 +1,8 @@
 <!--Defines the HTML template associated with the root AppComponent.-->
 <h1>{{title}}</h1>
-<app-achievements></app-achievements>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/achievements">My Achievements</a>
+</nav>
+<router-outlet></router-outlet>
 <app-messages></app-messages>

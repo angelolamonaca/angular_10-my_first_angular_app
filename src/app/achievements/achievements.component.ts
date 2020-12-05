@@ -10,27 +10,17 @@ import { MessageService} from '../message.service';
 })
 export class AchievementsComponent implements OnInit {
 
-  selectedAchievement: Achievement | undefined;
-  // creazione oggetto selectedAchievement che assumerá le
-  // proprietá dell'interfaccia Achievements
-
   achievements: Achievement[] | undefined;
 
-
-  constructor(private achievementService: AchievementService, private messageService: MessageService) { }
+  constructor(private achievementService: AchievementService) { }
 
   // tslint:disable-next-line:typedef
   ngOnInit() {
     this.getAchievements();
   }
 
-  onSelect(achievement: Achievement): void {
-    this.selectedAchievement = achievement;
-    this.messageService.add(`AchievementsComponent: Selected achievement id=${achievement.id}`);
-  }
-
   getAchievements(): void {
     this.achievementService.getAchievements()
-      .subscribe((achievements: Achievement[] | undefined) => this.achievements = achievements);
+      .subscribe(achievements => this.achievements = achievements);
   }
 }

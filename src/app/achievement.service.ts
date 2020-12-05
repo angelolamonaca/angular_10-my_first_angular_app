@@ -18,4 +18,12 @@ export class AchievementService {
     this.messageService.add('AchievementService: fetched achievements');
     return of(ACHIEVEMENTS);
   }
+
+  getAchievement(id: number): Observable<Achievement> {
+    // TODO: send the message _after_ fetching the hero
+    this.messageService.add(`AchievementService: fetched hero id=${id}`);
+    // @ts-ignore
+    return of(ACHIEVEMENTS.find(achievement => achievement.id === id));
+  }
+
 }
