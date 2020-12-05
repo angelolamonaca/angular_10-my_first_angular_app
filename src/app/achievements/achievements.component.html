@@ -1,0 +1,20 @@
+<h2>My Achievements</h2>
+<ul class="achievements">
+  <li *ngFor="let achievement of achievements"
+      [class.selected]="achievement === selectedAchievement"
+      (click)="onSelect(achievement)">
+    <span class="badge">{{achievement.id}}</span> {{achievement.date | date}}
+  </li>
+</ul>
+<div *ngIf="selectedAchievement">
+  <h2>{{selectedAchievement.date | date}}</h2>
+  <h3>{{selectedAchievement.title | uppercase}}</h3>
+  <div><span>ID: </span>{{selectedAchievement.id}}</div>
+  <div><span>Descrizione: </span>{{selectedAchievement.description}}</div>
+  <div><span>Punteggio: </span>{{selectedAchievement.rate}}</div>
+  <div>
+    <label>
+      <input [(ngModel)]="selectedAchievement.rate" placeholder="Inserisci il tuo giudizio"/>
+    </label>
+  </div>
+</div>
