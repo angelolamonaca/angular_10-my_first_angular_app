@@ -28,3 +28,11 @@ Nonostante un rallentamento dovuto dal mio debito di nozioni teoriche a riguardo
 - [x] Inserito servizio per successiva comunicazione con il backend
 
 - [ ] Libreria Nebular?
+
+## **07/12/2020**
+
+- [x] Studio teorico della libreria Nebular
+
+- [x] Studio teorico di Tomcat
+
+Nella giornata di Mercoledí con l'implementazione della libreria Nebular la versione Alpha del front-end dovrebbe essere completa, la "deadline for completion" é posticipata di un giorno al 10 Dicembre 2020.
