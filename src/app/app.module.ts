@@ -5,7 +5,7 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NbActionsModule, NbThemeModule} from '@nebular/theme';
+import {NbActionsModule, NbCardModule, NbThemeModule} from '@nebular/theme';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,6 +38,7 @@ import {routes} from '@nebular/auth';
     NbSidebarModule.forRoot(),
     NbButtonModule,
     NbActionsModule,
+    NbCardModule,
 
   ],
   providers: [],

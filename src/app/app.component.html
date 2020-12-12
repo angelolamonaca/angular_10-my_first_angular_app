@@ -2,11 +2,8 @@
 <nb-layout>
   <nb-layout-header>
     <div style="display: flex; flex-direction: row; flex-grow: 1; justify-content: flex-start; z-index: 1;">
-      <a href="" target="_blank">
-        <img src="../assets/images/logo/logo.svg" alt="logo" width="270" style="cursor: pointer; outline: none;">
-      </a>
+      <img src="../assets/images/logo/logo.svg" alt="logo" width="30%" style="cursor: pointer; outline: none;">
     </div>
-
     <div style="display: flex; justify-content: flex-end; z-index: 1;">
       <button nbButton
               routerLink="/dashboard"
@@ -20,11 +17,10 @@
               shape="round"
               style="text-transform: capitalize; font-size: 1.4rem; letter-spacing: 0.075em;">
         {{'Achievements'}}</button>
-
     </div>
-
   </nb-layout-header>
-
-  <router-outlet></router-outlet>
-  <app-messages></app-messages>
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+  <nb-layout-footer>Grab Your Achievement - Angelo Lamonaca</nb-layout-footer>
 </nb-layout>
