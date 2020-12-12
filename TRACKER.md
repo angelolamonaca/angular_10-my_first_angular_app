@@ -36,3 +36,15 @@ Nonostante un rallentamento dovuto dal mio debito di nozioni teoriche a riguardo
 - [x] Studio teorico di Tomcat
 
 Nella giornata di Mercoledí con l'implementazione della libreria Nebular la versione Alpha del front-end dovrebbe essere completa, la "deadline for completion" é posticipata di un giorno al 10 Dicembre 2020.
+
+## **12/12/2020**
+
+- [x] Creazione branch per implementazione della libreria Nebular
+
+- [x] Libreria Nebular implementata
+
+- [x] Settaggio Netifly per il deploy continuo
+
+Dal link seguente é possibile seguire live il progetto.
+Link:
+https://thirsty-borg-53c9ef.netlify.app/
