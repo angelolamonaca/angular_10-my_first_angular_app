@@ -1,13 +1,10 @@
-<div *ngIf="achievement">
-  <h2>{{achievement.date | date}}</h2>
-  <h3>{{achievement.title | uppercase}}</h3>
-  <div><span>ID: </span>{{achievement.id}}</div>
-  <div><span>Descrizione: </span>{{achievement.description}}</div>
-  <div><span>Punteggio: </span>{{achievement.rate}}</div>
-  <div>
-    <label>
-      <input [(ngModel)]="achievement.rate" placeholder="Inserisci il tuo giudizio"/>
-    </label>
-  </div>
-  <button (click)="goBack()">go back</button>
-</div>
+<nb-card>
+  <nb-card-body>
+    <div *ngIf="achievement">
+      <h2>{{achievement.date | date}}</h2>
+      <h3>{{achievement.title | uppercase}}</h3>
+      <div><span>ID: </span>{{achievement.id}}</div>
+      <div><span>Descrizione: </span>{{achievement.description}}</div>
+    </div>
+  </nb-card-body>
+</nb-card>

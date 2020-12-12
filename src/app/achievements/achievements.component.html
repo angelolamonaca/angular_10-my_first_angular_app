@@ -1,12 +1,15 @@
-<h2>My Achievements</h2>
-<ul class="achievements">
-  <li *ngFor="let achievement of achievements">
-    <a routerLink="/detail/{{achievement.id}}">
-    <span class="badge">{{achievement.id}}</span> {{achievement.date | date}}
-    </a>
-  </li>
-</ul>
-
+<nb-card size="medium">
+  <nb-card-header>
+    My Achievements
+  </nb-card-header>
+  <nb-list>
+    <nb-list-item *ngFor="let achievement of achievements">
+      <a routerLink="/detail/{{achievement.id}}">
+        <span class="badge">{{achievement.id}}</span> {{achievement.date | date}}
+      </a>
+    </nb-list-item>
+  </nb-list>
+</nb-card>
 
 <!-- riga 3: ciclo for per scorrere l'array con i dettagli degli Achievements
 riga 4: assegnazione stile al bottone premuto (per riconoscerlo)

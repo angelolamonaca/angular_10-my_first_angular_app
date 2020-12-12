@@ -4,6 +4,7 @@
 // and services to your application.
 
 import { Component } from '@angular/core';
+import { ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-root',
