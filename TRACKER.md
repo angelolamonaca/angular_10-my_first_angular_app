@@ -45,6 +45,6 @@ Nella giornata di Mercoledí con l'implementazione della libreria Nebular la ver
 
 - [x] Settaggio Netifly per il deploy continuo
 
-Dal link sottostante é possibile seguire live il progetto.
+Dal link seguente é possibile seguire live il progetto.
 Link:
 https://thirsty-borg-53c9ef.netlify.app/
