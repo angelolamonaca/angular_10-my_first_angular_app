@@ -1,9 +1,18 @@
-<h3>Dashboard</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let achievement of achievements" class="col-1-4"
-  routerLink="/detail/{{achievement.id}}">
-    <div class="module achievement">
-      <h4>{{achievement.date | date}}</h4>
+
+
+  <nb-layout-column>
+
+    <h3>Dashboard</h3>
+    <div class="grid grid-pad">
+      <a *ngFor="let achievement of achievements" class="col-1-4"
+         routerLink="/detail/{{achievement.id}}">
+        <div class="module achievement">
+          <h4>{{achievement.date | date}}</h4>
+        </div>
+      </a>
     </div>
-  </a>
-</div>
+  </nb-layout-column>
+
+  <nb-layout-footer></nb-layout-footer>
+
+  <nb-sidebar></nb-sidebar>
