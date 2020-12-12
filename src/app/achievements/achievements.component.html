@@ -1,10 +1,18 @@
-<nb-layout-column>
-  <div class="grid grid-pad">
-    <a *ngFor="let achievement of achievements" class="col-1-4"
-       routerLink="/detail/{{achievement.id}}">
-      <div class="module achievement">
-        <h4>{{achievement.date | date}}</h4>
-      </div>
-    </a>
-  </div>
-</nb-layout-column>
+<nb-card size="medium">
+  <nb-card-header>
+    My Achievements
+  </nb-card-header>
+  <nb-list>
+    <nb-list-item *ngFor="let achievement of achievements">
+      <a routerLink="/detail/{{achievement.id}}">
+        <span class="badge">{{achievement.id}}</span> {{achievement.date | date}}
+      </a>
+    </nb-list-item>
+  </nb-list>
+</nb-card>
+
+<!-- riga 3: ciclo for per scorrere l'array con i dettagli degli Achievements
+riga 4: assegnazione stile al bottone premuto (per riconoscerlo)
+riga 5: impostiamo un evento al click di un elemento della lista
+        quando avviene si richiama il metodo onSelect passando la variabile
+        achievement del ciclo for-->
