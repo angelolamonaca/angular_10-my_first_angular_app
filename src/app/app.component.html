@@ -1,26 +1,45 @@
 <!--Defines the HTML template associated with the root AppComponent.-->
 <nb-layout>
   <nb-layout-header>
-    <div style="display: flex; flex-direction: row; flex-grow: 1; justify-content: flex-start; z-index: 1;">
-      <img src="../assets/images/logo/logo.svg" alt="logo" width="30%" style="cursor: pointer; outline: none;">
+    <div class="logo-header">
+      <img src="../assets/images/logo/logo.svg" alt="logo" width=290px style="cursor: pointer; outline: none;">
     </div>
-    <div style="display: flex; justify-content: flex-end; z-index: 1;">
+
+  </nb-layout-header>
+
+  <nb-sidebar state="expanded">
+    <div class="buttons-zone">
+
       <button nbButton
+              fullWidth
               routerLink="/dashboard"
               ghost
               shape="round"
               style="text-transform: capitalize; font-size: 1.4rem; letter-spacing: 0.075em;">
         {{'Dashboard'}}</button>
+
       <button nbButton
+              fullWidth
               routerLink="/achievements"
               ghost
               shape="round"
               style="text-transform: capitalize; font-size: 1.4rem; letter-spacing: 0.075em;">
         {{'Achievements'}}</button>
+
+      <button nbButton
+              fullWidth
+              routerLink="/add-achievement"
+              ghost
+              shape="round"
+              style="text-transform: capitalize; font-size: 1.4rem; letter-spacing: 0.075em;">
+        {{'Add'}}</button>
+
     </div>
-  </nb-layout-header>
-  <nb-layout-column>
+  </nb-sidebar>
+
+  <nb-layout-column class="colored-column-primary">
     <router-outlet></router-outlet>
   </nb-layout-column>
+
   <nb-layout-footer>Grab Your Achievement - Angelo Lamonaca</nb-layout-footer>
 </nb-layout>

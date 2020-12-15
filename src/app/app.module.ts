@@ -5,8 +5,15 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NbActionsModule, NbCardModule, NbListModule, NbThemeModule} from '@nebular/theme';
-
+import {
+  NbActionsModule,
+  NbCardModule,
+  NbDatepickerModule,
+  NbListModule,
+  NbMenuModule,
+  NbThemeModule
+} from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AchievementsComponent } from './achievements/achievements.component';
@@ -18,6 +25,8 @@ import { NewDashboardComponent } from './new-dashboard/new-dashboard.component';
 import { RouterModule } from '@angular/router'; // we also need angular router for Nebular to function properly
 import { NbSidebarModule, NbLayoutModule, NbButtonModule } from '@nebular/theme';
 import {routes} from '@nebular/auth';
+import { NbIconModule } from '@nebular/theme';
+import { AddAchievementComponent } from './add-achievement/add-achievement.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +35,8 @@ import {routes} from '@nebular/auth';
     AchievementDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    NewDashboardComponent
+    NewDashboardComponent,
+    AddAchievementComponent
   ],
   imports: [
     BrowserModule,
@@ -38,8 +48,12 @@ import {routes} from '@nebular/auth';
     NbSidebarModule.forRoot(),
     NbButtonModule,
     NbActionsModule,
+    NbMenuModule.forRoot(),
     NbCardModule,
     NbListModule,
+    NbEvaIconsModule,
+    NbIconModule,
+    NbDatepickerModule,
 
   ],
   providers: [],

@@ -5,6 +5,7 @@
 
 import { Component } from '@angular/core';
 import { ChangeDetectionStrategy } from '@angular/core';
+import {NbMenuItem} from "@nebular/theme";
 
 @Component({
   selector: 'app-root',
